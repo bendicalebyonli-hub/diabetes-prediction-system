@@ -173,7 +173,7 @@ export const PredictionForm: React.FC<PredictionFormProps> = ({
           </div>
           <div className="text-[11px] text-slate-400 mb-2.5 flex justify-between">
             <span>Normal: 18.5–24.9</span>
-            <span>Obese: $\ge$ 30.0</span>
+            <span>Obese: &ge; 30.0</span>
           </div>
           <input
             type="range"
@@ -198,7 +198,7 @@ export const PredictionForm: React.FC<PredictionFormProps> = ({
           </div>
           <div className="text-[11px] text-slate-400 mb-2.5 flex justify-between">
             <span>Optimal: &lt; 80 mm Hg</span>
-            <span>Stage 2: $\ge$ 90</span>
+            <span>Stage 2: &ge; 90</span>
           </div>
           <input
             type="range"
@@ -292,7 +292,7 @@ export const PredictionForm: React.FC<PredictionFormProps> = ({
               2-Hr Serum Insulin
             </label>
             <span className="text-xs font-semibold text-teal-700 bg-teal-50 px-2 py-0.5 rounded border border-teal-100">
-              {formData.insulin} $\mu$U/mL
+              {formData.insulin} &mu;U/mL
             </span>
           </div>
           <div className="text-[11px] text-slate-400 mb-2.5 flex justify-between">
@@ -351,7 +351,7 @@ export const PredictionForm: React.FC<PredictionFormProps> = ({
           ) : (
             <>
               <Activity className="w-5 h-5" />
-              Compute Diabetes Classification & Probability
+              Compute Diabetes Classification &amp; Probability
             </>
           )}
         </button>

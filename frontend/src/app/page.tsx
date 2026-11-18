@@ -24,14 +24,18 @@ export default function Home() {
     const backendUrl =
       process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
 
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 3000);
+
     try {
       // 1. Attempt connection to FastAPI backend service
       const res = await fetch(`${backendUrl}/predict`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
-        signal: AbortSignal.timeout(3500),
+        signal: controller.signal,
       });
+      clearTimeout(timeoutId);
 
       if (res.ok) {
         const data: DiabetesPredictionOutput = await res.json();
@@ -41,6 +45,7 @@ export default function Home() {
         return;
       }
     } catch {
+      clearTimeout(timeoutId);
       // Backend unreachable or timed out; fall back to Next.js serverless route
     }
 

@@ -167,7 +167,7 @@ export const ResultCard: React.FC<ResultCardProps> = ({ result, isLoading }) => 
 
       {/* Safety Notice Footer */}
       <div className="mt-6 pt-4 border-t border-slate-100 text-[11px] text-slate-400 flex items-center justify-between">
-        <span>Decision Threshold: $\tau = 0.50$</span>
+        <span>Decision Threshold: &tau; = 0.50</span>
         <span>Confidence: {result.confidence_score}%</span>
       </div>
     </div>

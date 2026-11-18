@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { X, BookOpen, ExternalLink, ShieldCheck } from "lucide-react";
+import { X, BookOpen } from "lucide-react";
 
 interface DatasetInfoModalProps {
   isOpen: boolean;
@@ -33,7 +33,7 @@ export const DatasetInfoModal: React.FC<DatasetInfoModalProps> = ({
               Pima Indians Diabetes Dataset Provenance
             </h3>
             <p className="text-xs text-slate-500">
-              Historical Context, Original Study & Clinical Limitations
+              Historical Context, Original Study &amp; Clinical Limitations
             </p>
           </div>
         </div>
@@ -53,7 +53,7 @@ export const DatasetInfoModal: React.FC<DatasetInfoModalProps> = ({
               <li>Demographic: Females of Pima Indian ancestry</li>
               <li>Age Threshold: At least 21 years of age</li>
               <li>Location: Gila River Indian Community near Phoenix, Arizona</li>
-              <li>Diagnostic Standard: World Health Organization (WHO) 2-hour post-load plasma glucose criteria ($\ge 200$ mg/dL)</li>
+              <li>Diagnostic Standard: World Health Organization (WHO) 2-hour post-load plasma glucose criteria (&ge; 200 mg/dL)</li>
             </ul>
           </section>
 
@@ -75,7 +75,7 @@ export const DatasetInfoModal: React.FC<DatasetInfoModalProps> = ({
           </section>
 
           <section>
-            <h4 className="font-bold text-slate-900 mb-1">4. Ethical & Clinical Disclaimers</h4>
+            <h4 className="font-bold text-slate-900 mb-1">4. Ethical &amp; Clinical Disclaimers</h4>
             <div className="p-3 bg-amber-50 rounded-xl border border-amber-200 text-xs text-amber-900 space-y-1">
               <p>
                 <strong>Academic Scope:</strong> This machine learning prototype is engineered for higher education coursework, algorithmic benchmarking, and software architecture demonstration.

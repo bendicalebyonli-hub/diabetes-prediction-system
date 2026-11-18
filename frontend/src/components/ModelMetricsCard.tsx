@@ -230,7 +230,7 @@ export const ModelMetricsCard: React.FC = () => {
                 3. Standard Scaler
               </span>
               <p className="text-[11px] text-slate-500 leading-snug">
-                Normalizes features to zero mean ($\mu = 0$) and unit variance ($\sigma = 1$), ensuring unbiased coefficient convergence.
+                Normalizes features to zero mean (&mu; = 0) and unit variance (&sigma; = 1), ensuring unbiased coefficient convergence.
               </p>
             </div>
           </div>
@@ -238,7 +238,7 @@ export const ModelMetricsCard: React.FC = () => {
           <div className="p-3.5 bg-emerald-50/60 rounded-xl border border-emerald-200 text-xs text-emerald-900 flex items-start gap-2.5">
             <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
             <p>
-              <strong>Zero Data Leakage Guarantee:</strong> All imputer statistics and scaling parameters are computed strictly on training folds ($X_{train}$) and transformed onto test holdouts ($X_{test}$) via Scikit-Learn&apos;s unified <code>Pipeline</code> abstraction.
+              <strong>Zero Data Leakage Guarantee:</strong> All imputer statistics and scaling parameters are computed strictly on training folds (X_train) and transformed onto test holdouts (X_test) via Scikit-Learn&apos;s unified <code>Pipeline</code> abstraction.
             </p>
           </div>
         </div>
