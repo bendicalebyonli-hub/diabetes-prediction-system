@@ -1,0 +1,28 @@
+# Python & ML
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+*.joblib
+*.pkl
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+build/
+dist/
+
+# Environment & OS
+.env
+.env.local
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

@@ -1,0 +1,84 @@
+{
+  "total_records": 768,
+  "class_distribution": {
+    "non_diabetic_0": 500,
+    "diabetic_1": 268,
+    "prevalence_rate_pct": 34.9
+  },
+  "zero_value_analysis": [
+    {
+      "Feature": "Pregnancies",
+      "Total Records": 768,
+      "Zero Count": 111,
+      "Zero Percentage (%)": 14.45,
+      "Physiologically Valid 0?": "Yes (Valid Count)",
+      "Status": "VALID"
+    },
+    {
+      "Feature": "Glucose",
+      "Total Records": 768,
+      "Zero Count": 5,
+      "Zero Percentage (%)": 0.65,
+      "Physiologically Valid 0?": "No (Missing Measurement)",
+      "Status": "REQUIRES_IMPUTATION"
+    },
+    {
+      "Feature": "BloodPressure",
+      "Total Records": 768,
+      "Zero Count": 35,
+      "Zero Percentage (%)": 4.56,
+      "Physiologically Valid 0?": "No (Missing Measurement)",
+      "Status": "REQUIRES_IMPUTATION"
+    },
+    {
+      "Feature": "SkinThickness",
+      "Total Records": 768,
+      "Zero Count": 227,
+      "Zero Percentage (%)": 29.56,
+      "Physiologically Valid 0?": "No (Missing Measurement)",
+      "Status": "REQUIRES_IMPUTATION"
+    },
+    {
+      "Feature": "Insulin",
+      "Total Records": 768,
+      "Zero Count": 374,
+      "Zero Percentage (%)": 48.7,
+      "Physiologically Valid 0?": "No (Missing Measurement)",
+      "Status": "REQUIRES_IMPUTATION"
+    },
+    {
+      "Feature": "BMI",
+      "Total Records": 768,
+      "Zero Count": 11,
+      "Zero Percentage (%)": 1.43,
+      "Physiologically Valid 0?": "No (Missing Measurement)",
+      "Status": "REQUIRES_IMPUTATION"
+    },
+    {
+      "Feature": "DiabetesPedigreeFunction",
+      "Total Records": 768,
+      "Zero Count": 0,
+      "Zero Percentage (%)": 0.0,
+      "Physiologically Valid 0?": "Yes (Valid Count)",
+      "Status": "VALID"
+    },
+    {
+      "Feature": "Age",
+      "Total Records": 768,
+      "Zero Count": 0,
+      "Zero Percentage (%)": 0.0,
+      "Physiologically Valid 0?": "Yes (Valid Count)",
+      "Status": "VALID"
+    }
+  ],
+  "top_outcome_correlations": {
+    "Glucose": 0.4946502590810323,
+    "BMI": 0.3136804821984413,
+    "Insulin": 0.3034542520056762,
+    "SkinThickness": 0.25949142216466015,
+    "Age": 0.23835598302719757,
+    "Pregnancies": 0.22189815303398636,
+    "DiabetesPedigreeFunction": 0.17384406565296004,
+    "BloodPressure": 0.17058928446068453
+  }
+}
